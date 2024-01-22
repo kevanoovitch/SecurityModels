@@ -5,10 +5,9 @@ directory = input()
 
 AllFiles = fileTraversal(directory)
 
-#debug
-print("------")    
+# debug
+print("------")
 print(directory)
 
 for index in range(len(AllFiles)):
     print(AllFiles[index])
-
