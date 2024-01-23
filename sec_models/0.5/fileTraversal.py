@@ -1,21 +1,24 @@
-# _____________________
 import os
+def fileTraversal(startDir):
+    """
+    Finds all the files (recursivly) in the given directory 
+    Argument: A directory path 
+    Returns: a list off all sub directories paths(?) and files in directory
+    
+    """
 
+    contents = os.listdir(startDir)
+    tmp_list_files = []
 
-def fileTraversal(path):
-    files_list = []
-    try:
-        for item in os.listdir(path):
-            item_path = os.path.join(path, item)
-            if os.path.isfile(item_path):
-                files_list.append(item_path)
-            elif os.path.isdir(item_path):
-                files_list.extend(fileTraversal(item_path))
-    except OSError as e:
-        print(f"Error: {e}")
-    print(files_list)
-    return files_list
+    for index in range(len(contents)):
+        file = contents[index]
 
+        file_path = os.path.join(startDir, file)
 
-fileTraversal(
-    "/home/kevin/Github Repository/AntiVirus/SecurityModels/sec_models/test_dir")
+        if os.path.isdir(file_path):
+            testList = fileTraversal(file_path)
+            tmp_list_files.extend(testList)
+        
+        else:
+            tmp_list_files.append(file_path)
+    return tmp_list_files

@@ -5,8 +5,4 @@ def convertHex(signatures):
          bytes_data = bytes.fromhex(value)
          print(key, ":",value, ":", bytes_data)
 
-         
-        
-
-
 convertHex(readSignatures())
