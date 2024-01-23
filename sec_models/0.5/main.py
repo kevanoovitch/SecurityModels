@@ -1,4 +1,4 @@
-import fileTraversal
+from fileTraversal import fileTraversal
 
 print("Input directory")
 directory = input()
