@@ -7,27 +7,6 @@ import os
 #     Returns: A list off all sub-directories, paths(?) and files in directory
 #     """
 
-#     contents = os.listdir(start_dir)
-#     tmp_list_files = []
-
-#     for index in range(len(contents)):
-
-#         file = contents[index]
-
-#         file_path = os.path.join(start_dir, file)
-
-#         if os.path.isdir(file_path):
-#             testList = fileTraversal(file_path)
-#             tmp_list_files.append(testList)
-
-#         else:
-#             tmp_list_files.append(file_path)
-#     print(tmp_list_files)
-#     return tmp_list_files
-
-# fileTraversal("/Users/0x/Documents/GitHub/SecurityModels/sec_models/test_dir")
-
-
 def fileTraversal(start_dir="sec_models/abc"):
     """
     Finds all the files (recursivly) in the given directory.

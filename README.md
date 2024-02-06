@@ -1,14 +1,11 @@
 # SecurityModels
 Our security models course groupwork where we will create our own Antivirus
 
-// TODO
-- Virusname must not exceed 32 characters.
-
 
 1. **Part 1 - Filter Traversal:**
-   - Write a Python script that accepts a starting directory as a command-line argument.
-   - Implement a recursive function to traverse through files and subdirectories.
-   - Use the `os` module for directory listing and recursion.
+   - ✅ Write a Python script that accepts a starting directory as a command-line argument.
+   - ✅ Implement a recursive function to traverse through files and subdirectories.
+   - ✅ Use the `os` module for directory listing and recursion.
 
 2. **Part 2 - Virus Database:**
    - Read the virus definitions from the "signatures.db" file.

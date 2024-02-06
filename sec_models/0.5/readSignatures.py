@@ -1,6 +1,6 @@
 import os
 
-def readSignatures(db_path = "sec_models/0.5/signatures copy.db"):
+def readSignatures(db_path = "sec_models/0.5/signatures.db"):
     """ Return signatures as a dictionary of virus database.
         Argument: Path to 'signature.db' (has default).
         Returns: Dictionary of signatures with name and value.
@@ -12,7 +12,7 @@ def readSignatures(db_path = "sec_models/0.5/signatures copy.db"):
                 for line in signatureFile:
                     name, signature = line.strip().split("=")
                     if not len(name) > 32:
-                        signatures[name] = signature
+                        signatures[name] = signature.hex()
     except OSError as e:
         print(f"Error: {e}")
 

@@ -16,8 +16,10 @@ def readBinary(file_arr):
             print("index:",file,":", data, "\n")
             f.close()
 
+
+
     print("[END] Reading binary")
 # fileTraversal
     
 
-readBinary(fileTraversal("/Users/0x/Documents/GitHub/SecurityModels/sec_models/test_dir"))
+readBinary(fileTraversal("/Users/0x/Documents/GitHub/SecurityModels/sec_models/abc"))
