@@ -1,4 +1,5 @@
 from read_signatures import read_signatures
+from file_traversal import file_traversal
 
 def  convert_files(files):
     """Takes and input of an array of paths to files that needs to be read as binary.
@@ -11,14 +12,16 @@ def  convert_files(files):
     print("[START] Reading binary")
     for file in files:
         with open(file, 'rb') as f:
-                data = f.read()
+                data = f.read().hex()
                 d_file[file] = data
-                for key, value in signatures.items():
-                    if value in data:
-                        print(f"MATCH: {key}\n{value}\n")
+
+    print(d_file)
+
 
 
 
 
 
     print("[END] Reading binary")
+
+convert_files((file_traversal()))

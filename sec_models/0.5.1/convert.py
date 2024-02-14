@@ -5,10 +5,15 @@ def convert_bytes(read_files):
     converted_files = {}
 
     for file in read_files:
-        with open(file, 'rb') as f:
-            data = f.read()
 
-            converted_files[file] = data[1:2];
+        try:
+            text = open(file, 'r', encoding='utf-8').read()
+        except UnicodeDecodeError:
+            text = open(file, 'r', encoding='ISO-8859-1').read()  # Try a different encoding
+
+
+        data = text
+        converted_files[file] = data
 
 
     print(converted_files)
