@@ -1,12 +1,5 @@
 import os
 
-# def fileTraversal(start_dir = "sec_models/abc"):
-#     """
-#     Finds all the files (recursivly) in the given directory
-#     Argument: Path to directory to filter through.
-#     Returns: A list off all sub-directories, paths(?) and files in directory
-#     """
-
 def fileTraversal(start_dir="sec_models/abc"):
     """
     Finds all the files (recursivly) in the given directory.

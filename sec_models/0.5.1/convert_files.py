@@ -1,6 +1,3 @@
-from read_signatures import read_signatures
-from file_traversal import file_traversal
-
 def  convert_files(files):
     """Takes and input of an array of paths to files that needs to be read as binary.
     Argument: Array with file paths.

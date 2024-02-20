@@ -1,22 +1,38 @@
-from file_traversal import file_traversal
+def toHex(file_path):
+    """
+    Arg: File path 
+    Tries to open file if succesfull converts contents t 
+    Return: file content in hex
+    """
+    try:
+        with open(file_path, 'rb') as file:
+            # Read the file content in binary mode
+            file_content = file.read()
 
-def convert_bytes(read_files):
+            # Convert binary data to hexadecimal
+            hex_representation = file_content.hex()
 
-    converted_files = {}
-
-    for file in read_files:
-
-        try:
-            text = open(file, 'r', encoding='utf-8').read()
-        except UnicodeDecodeError:
-            text = open(file, 'r', encoding='ISO-8859-1').read()  # Try a different encoding
-
-
-        data = text
-        converted_files[file] = data
-
-
-    print(converted_files)
+            return hex_representation
+    except FileNotFoundError:
+        return f"File '{file_path}' not found."
 
 
-convert_bytes(file_traversal())
+def toByte(file_path):
+    
+    """
+
+   - **Description:** This function takes the path of a file as input, reads its content in binary mode, and returns the binary data as a bytes object.
+   - **Parameters:**
+     - `file_path` (str): The path to the file to be processed.
+   - **Returns:**
+     - (bytes): The binary representation of the file's content.
+     - (str): If the file is not found, a message indicating the file is not found.
+    """
+    try:
+        with open(file_path, 'rb') as file:
+            # Read the file content in binary mode
+            byte_representation = file.read()
+
+            return byte_representation
+    except FileNotFoundError:
+        return f"File '{file_path}' not found."

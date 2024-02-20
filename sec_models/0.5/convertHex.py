@@ -16,4 +16,3 @@ def convertHex(signatures):
             print(f"Error decoding: {e} : {key}")
 
     print(suc_key)
-convertHex(readSignatures("/Users/0x/Documents/GitHub/SecurityModels/sec_models/0.5/signatures.db"))
