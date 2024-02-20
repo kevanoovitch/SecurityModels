@@ -3,11 +3,11 @@ from fileTraversal import fileTraversal
 print("Input directory")
 directory = input()
 
-AllFiles = fileTraversal(directory)
+AllFiles_list = fileTraversal(directory)
 
 # debug
 print("------")
 print(directory)
 
-for index in range(len(AllFiles)):
-    print(AllFiles[index])
+for index in range(len(AllFiles_list)):
+    print(AllFiles_list[index])
