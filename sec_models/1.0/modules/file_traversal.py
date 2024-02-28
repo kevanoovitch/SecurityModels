@@ -7,6 +7,7 @@ def file_traversal(path="/Users/0x/Documents/GitHub/SecurityModels/sec_models/te
     Returns: List of all files in the given directory.
     """
 
+   
     all_files = []
     try:
         for item in os.listdir(path):

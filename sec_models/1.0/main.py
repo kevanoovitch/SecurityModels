@@ -1,12 +1,15 @@
-from file_traversal import file_traversal
-from read_signatures import read_signatures
+from modules.read_signatures import read_signatures
+from modules.compare import compare
+from modules.file_traversal import file_traversal
+from modules.utils import utils
 
-files = file_traversal()
-signatures = read_signatures()
 
-for file in files:
-    with open(file, 'rb') as f:
-        data = f.read()
-        for key, values in signatures.items():
-            if values in data:
-                print("MATCH: ", key, "in ", file)
+
+db_path, file_path = utils()
+
+signatures = read_signatures(db_path)
+files = file_traversal(file_path)
+
+print(signatures)
+
+compare(files,signatures)
