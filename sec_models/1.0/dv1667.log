@@ -1,0 +1,12 @@
+Compromised file: h4x0r.pdf | Virus: ! BAD NAME ! TestVirus.BAAAAAAAAAAAAAAAAAAAAAAA< | Compromised file path: assets/directory/h4x0r.pdf 
+Compromised file: passwd | Virus: TestVirus.C | Compromised file path: assets/directory/SubDir7/SubSubDir73/passwd 
+Compromised file: passwd | Virus: TestVirus.J | Compromised file path: assets/directory/SubDir7/SubSubDir73/passwd 
+Compromised file: fil3 | Virus: TestVirus.J | Compromised file path: assets/directory/SubDir7/SubSubDir75/fil3 
+Compromised file: fil3 | Virus: TestVirus.Q | Compromised file path: assets/directory/SubDir7/SubSubDir75/fil3 
+Compromised file: fil3 | Virus: TestTrojan.6 | Compromised file path: assets/directory/SubDir7/SubSubDir75/fil3 
+Compromised file: fil3 | Virus: ! BAD NAME ! TestTrojanTestTrojanTestTrojanTestTrojanTestTrojan.6 | Compromised file path: assets/directory/SubDir7/SubSubDir75/fil3 
+Compromised file: ypcat | Virus: TestVirus.J | Compromised file path: assets/directory/SubDir7/SubSubDir75/ypcat 
+Compromised file: ypcat | Virus: TestVirus.Q | Compromised file path: assets/directory/SubDir7/SubSubDir75/ypcat 
+Compromised file: ypcat | Virus: TestTrojan.6 | Compromised file path: assets/directory/SubDir7/SubSubDir75/ypcat 
+Compromised file: ypcat | Virus: ! BAD NAME ! TestTrojanTestTrojanTestTrojanTestTrojanTestTrojan.6 | Compromised file path: assets/directory/SubDir7/SubSubDir75/ypcat 
+Compromised file: test.pdf | Virus: ! BAD NAME ! TestVirus.BAAAAAAAAAAAAAAAAAAAAAAA< | Compromised file path: assets/directory/SubDir5/SubSubDir52/test.pdf 

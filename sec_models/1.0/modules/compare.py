@@ -19,5 +19,10 @@ def compare(files, signatures):
                 data = read_file.read()
                 for key, values in signatures.items():
                     if values in data:
-                        #print("MATCH: ", key, "in ", file)
-                        output_file.write(f"Compromised file: {lf} | Virus: {key} | Compromised file path: {file} \n")
+                        if "****" in key:
+                            output_file.write(
+                                f"Compromised file: {lf} | Virus: ! BAD NAME ! {str(key).replace('*', '')} | Compromised file path: {file} \n")
+
+                        else:
+                            output_file.write(
+                                f"Compromised file: {lf} | Virus: {key} | Compromised file path: {file} \n")
