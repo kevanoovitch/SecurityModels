@@ -1,7 +1,4 @@
 import os
-from time import sleep
-from progressbar import progressbar
-
 def utils():
     user_input = input("Input signature path (absolute or relative): ")
     if os.path.exists(user_input):
