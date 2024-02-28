@@ -1,6 +1,6 @@
 import os
 
-def file_traversal(path="/Users/0x/Documents/GitHub/SecurityModels/sec_models/test_dir"):
+def file_traversal(path="/Users/0x/Documents/GitHub/SecurityModels/sec_models/dir"):
     """
     Finds all the files in the given directory.
     Argument: Path with files to be traversed.
