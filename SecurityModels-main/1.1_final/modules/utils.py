@@ -9,8 +9,13 @@
 import os
 import sys
 from io import StringIO
-import readline
 import os
+import subprocess
+
+
+def install_package(package):
+    # Checks that the python-gnup pip package is installed
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
 
 def dir_check(directory_input):
