@@ -39,6 +39,10 @@ def critical_files():
     critical_files = [
         file for file in critical_files if 'assets/file_signatures' not in file]
 
+    # filter out existing file signatures
+    critical_files = [
+        file for file in critical_files if '.git' not in file]
+
     return critical_files
 
 
